@@ -1,0 +1,1179 @@
+demands 45
+[
+  {
+    "id": 11,
+    "from": "Kosevje",
+    "to": "Lasko",
+    "demand_in_gbps": 40,
+    "slots": 4
+  },
+  {
+    "id": 0,
+    "from": "Kosevje",
+    "to": "Trbovlje",
+    "demand_in_gbps": 40,
+    "slots": 3
+  },
+  {
+    "id": 34,
+    "from": "Lasko",
+    "to": "Kosevje",
+    "demand_in_gbps": 40,
+    "slots": 3
+  },
+  {
+    "id": 41,
+    "from": "Ljubljana",
+    "to": "Lasko",
+    "demand_in_gbps": 40,
+    "slots": 3
+  },
+  {
+    "id": 47,
+    "from": "Tolmin",
+    "to": "Kosevje",
+    "demand_in_gbps": 40,
+    "slots": 3
+  },
+  {
+    "id": 61,
+    "from": "Trbovlje",
+    "to": "Kosevje",
+    "demand_in_gbps": 40,
+    "slots": 3
+  },
+  {
+    "id": 86,
+    "from": "Ljubljana",
+    "to": "Kosevje",
+    "demand_in_gbps": 40,
+    "slots": 4
+  },
+  {
+    "id": 25,
+    "from": "SBistrika",
+    "to": "Kosevje",
+    "demand_in_gbps": 40,
+    "slots": 10
+  },
+  {
+    "id": 60,
+    "from": "Trbovlje",
+    "to": "Kosevje",
+    "demand_in_gbps": 40,
+    "slots": 10
+  },
+  {
+    "id": 65,
+    "from": "NovoMesto",
+    "to": "Lasko",
+    "demand_in_gbps": 40,
+    "slots": 3
+  },
+  {
+    "id": 6,
+    "from": "Tolmin",
+    "to": "Trbovlje",
+    "demand_in_gbps": 40,
+    "slots": 3
+  },
+  {
+    "id": 70,
+    "from": "Trbovlje",
+    "to": "Lasko",
+    "demand_in_gbps": 40,
+    "slots": 3
+  },
+  {
+    "id": 68,
+    "from": "Lasko",
+    "to": "Trbovlje",
+    "demand_in_gbps": 40,
+    "slots": 3
+  },
+  {
+    "id": 87,
+    "from": "Celje",
+    "to": "Lasko",
+    "demand_in_gbps": 40,
+    "slots": 3
+  },
+  {
+    "id": 4,
+    "from": "Dravograd",
+    "to": "Lasko",
+    "demand_in_gbps": 40,
+    "slots": 3
+  },
+  {
+    "id": 69,
+    "from": "Tolmin",
+    "to": "Lasko",
+    "demand_in_gbps": 40,
+    "slots": 3
+  },
+  {
+    "id": 73,
+    "from": "NovoMesto",
+    "to": "Trbovlje",
+    "demand_in_gbps": 40,
+    "slots": 3
+  },
+  {
+    "id": 89,
+    "from": "Kranj",
+    "to": "Tolmin",
+    "demand_in_gbps": 40,
+    "slots": 3
+  },
+  {
+    "id": 88,
+    "from": "Dravograd",
+    "to": "Lasko",
+    "demand_in_gbps": 40,
+    "slots": 10
+  },
+  {
+    "id": 104,
+    "from": "Lasko",
+    "to": "Tolmin",
+    "demand_in_gbps": 40,
+    "slots": 3
+  },
+  {
+    "id": 77,
+    "from": "Celje",
+    "to": "Trbovlje",
+    "demand_in_gbps": 40,
+    "slots": 3
+  },
+  {
+    "id": 80,
+    "from": "Maribor",
+    "to": "Trbovlje",
+    "demand_in_gbps": 40,
+    "slots": 3
+  },
+  {
+    "id": 101,
+    "from": "Lasko",
+    "to": "Ljubljana",
+    "demand_in_gbps": 40,
+    "slots": 3
+  },
+  {
+    "id": 105,
+    "from": "Dravograd",
+    "to": "Trbovlje",
+    "demand_in_gbps": 40,
+    "slots": 3
+  },
+  {
+    "id": 109,
+    "from": "Dravograd",
+    "to": "Tolmin",
+    "demand_in_gbps": 40,
+    "slots": 3
+  },
+  {
+    "id": 8,
+    "from": "Kosevje",
+    "to": "Tolmin",
+    "demand_in_gbps": 40,
+    "slots": 10
+  },
+  {
+    "id": 19,
+    "from": "Celje",
+    "to": "Lasko",
+    "demand_in_gbps": 40,
+    "slots": 3
+  },
+  {
+    "id": 28,
+    "from": "Bled",
+    "to": "Trbovlje",
+    "demand_in_gbps": 40,
+    "slots": 3
+  },
+  {
+    "id": 24,
+    "from": "Maribor",
+    "to": "Celje",
+    "demand_in_gbps": 40,
+    "slots": 9
+  },
+  {
+    "id": 16,
+    "from": "Dravograd",
+    "to": "NovoMesto",
+    "demand_in_gbps": 40,
+    "slots": 10
+  },
+  {
+    "id": 27,
+    "from": "Dravograd",
+    "to": "Lasko",
+    "demand_in_gbps": 40,
+    "slots": 4
+  },
+  {
+    "id": 29,
+    "from": "Lasko",
+    "to": "Tolmin",
+    "demand_in_gbps": 40,
+    "slots": 4
+  },
+  {
+    "id": 30,
+    "from": "Bled",
+    "to": "Dravograd",
+    "demand_in_gbps": 40,
+    "slots": 10
+  },
+  {
+    "id": 32,
+    "from": "Trbovlje",
+    "to": "Ljubljana",
+    "demand_in_gbps": 40,
+    "slots": 5
+  },
+  {
+    "id": 15,
+    "from": "Tolmin",
+    "to": "Kranj",
+    "demand_in_gbps": 40,
+    "slots": 1
+  },
+  {
+    "id": 22,
+    "from": "Kranj",
+    "to": "NovoMesto",
+    "demand_in_gbps": 40,
+    "slots": 5
+  },
+  {
+    "id": 21,
+    "from": "NovoMesto",
+    "to": "Lasko",
+    "demand_in_gbps": 40,
+    "slots": 1
+  },
+  {
+    "id": 17,
+    "from": "NovoMesto",
+    "to": "SBistrika",
+    "demand_in_gbps": 40,
+    "slots": 3
+  },
+  {
+    "id": 62,
+    "from": "Ljubljana",
+    "to": "Dravograd",
+    "demand_in_gbps": 40,
+    "slots": 10
+  },
+  {
+    "id": 20,
+    "from": "Dravograd",
+    "to": "Kosevje",
+    "demand_in_gbps": 40,
+    "slots": 4
+  },
+  {
+    "id": 39,
+    "from": "Tolmin",
+    "to": "Trbovlje",
+    "demand_in_gbps": 40,
+    "slots": 3
+  },
+  {
+    "id": 50,
+    "from": "Kosevje",
+    "to": "Dravograd",
+    "demand_in_gbps": 40,
+    "slots": 3
+  },
+  {
+    "id": 35,
+    "from": "Kosevje",
+    "to": "NovoMesto",
+    "demand_in_gbps": 40,
+    "slots": 4
+  },
+  {
+    "id": 18,
+    "from": "Lasko",
+    "to": "Maribor",
+    "demand_in_gbps": 40,
+    "slots": 4
+  },
+  {
+    "id": 36,
+    "from": "Kosevje",
+    "to": "Ljubljana",
+    "demand_in_gbps": 40,
+    "slots": 3
+  }
+]
+supplied:  11
+supplied:  0
+supplied:  34
+supplied:  41
+supplied:  86
+supplied:  6
+supplied:  70
+supplied:  87
+supplied:  69
+supplied:  89
+supplied:  77
+supplied:  80
+supplied:  101
+supplied:  19
+supplied:  22
+supplied:  17
+supplied:  39
+supplied:  18
+supplied:  36
+{
+  "Ajdovscina - Koper": {
+    "0": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    },
+    "1": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    },
+    "2": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    },
+    "3": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    },
+    "4": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    },
+    "5": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    },
+    "6": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    },
+    "7": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    }
+  },
+  "Bled - Tolmin": {
+    "0": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    },
+    "1": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    },
+    "2": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    },
+    "3": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    },
+    "4": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    },
+    "5": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    },
+    "6": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    },
+    "7": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    }
+  },
+  "Celje - Lasko": {
+    "0": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    },
+    "1": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    },
+    "2": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    },
+    "3": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    },
+    "4": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    },
+    "5": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    },
+    "6": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    },
+    "7": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    }
+  },
+  "Celje - Velenje": {
+    "0": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    },
+    "1": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    },
+    "2": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    },
+    "3": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    },
+    "4": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    },
+    "5": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    },
+    "6": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    },
+    "7": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    }
+  },
+  "Dravograd - Maribor": {
+    "0": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    },
+    "1": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    },
+    "2": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    },
+    "3": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    },
+    "4": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    },
+    "5": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    },
+    "6": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    },
+    "7": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    }
+  },
+  "Koper - Ljubljana": {
+    "0": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    },
+    "1": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    },
+    "2": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    },
+    "3": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    },
+    "4": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    },
+    "5": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    },
+    "6": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    },
+    "7": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    }
+  },
+  "Kosevje - Ljubljana": {
+    "0": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    },
+    "1": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    },
+    "2": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    },
+    "3": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    },
+    "4": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    },
+    "5": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    },
+    "6": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    },
+    "7": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    }
+  },
+  "Kranj - Bled": {
+    "0": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    },
+    "1": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    },
+    "2": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    },
+    "3": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    },
+    "4": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    },
+    "5": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    },
+    "6": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    },
+    "7": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    }
+  },
+  "Krki - NovoMesto": {
+    "0": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    },
+    "1": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    },
+    "2": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    },
+    "3": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    },
+    "4": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    },
+    "5": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    },
+    "6": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    },
+    "7": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    }
+  },
+  "Lasko - Trbovlje": {
+    "0": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    },
+    "1": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    },
+    "2": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    },
+    "3": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    },
+    "4": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    },
+    "5": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    },
+    "6": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    },
+    "7": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    }
+  },
+  "Ljubljana - Celje": {
+    "0": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    },
+    "1": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    },
+    "2": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    },
+    "3": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    },
+    "4": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    },
+    "5": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    },
+    "6": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    },
+    "7": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    }
+  },
+  "Ljubljana - Kranj": {
+    "0": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    },
+    "1": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    },
+    "2": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    },
+    "3": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    },
+    "4": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    },
+    "5": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    },
+    "6": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    },
+    "7": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    }
+  },
+  "Maribor - SBistrika": {
+    "0": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    },
+    "1": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    },
+    "2": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    },
+    "3": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    },
+    "4": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    },
+    "5": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    },
+    "6": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    },
+    "7": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    }
+  },
+  "NovaGorica - Ajdovscina": {
+    "0": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    },
+    "1": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    },
+    "2": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    },
+    "3": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    },
+    "4": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    },
+    "5": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    },
+    "6": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    },
+    "7": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    }
+  },
+  "NovoMesto - Kosevje": {
+    "0": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    },
+    "1": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    },
+    "2": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    },
+    "3": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    },
+    "4": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    },
+    "5": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    },
+    "6": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    },
+    "7": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    }
+  },
+  "SBistrika - Celje": {
+    "0": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    },
+    "1": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    },
+    "2": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    },
+    "3": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    },
+    "4": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    },
+    "5": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    },
+    "6": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    },
+    "7": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    }
+  },
+  "SBistrika - Krki": {
+    "0": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    },
+    "1": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    },
+    "2": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    },
+    "3": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    },
+    "4": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    },
+    "5": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    },
+    "6": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    },
+    "7": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    }
+  },
+  "Tolmin - NovaGorica": {
+    "0": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    },
+    "1": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    },
+    "2": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    },
+    "3": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    },
+    "4": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    },
+    "5": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    },
+    "6": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    },
+    "7": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    }
+  },
+  "Trbovlje - Ljubljana": {
+    "0": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    },
+    "1": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    },
+    "2": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    },
+    "3": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    },
+    "4": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    },
+    "5": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    },
+    "6": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    },
+    "7": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    }
+  },
+  "Velenje - Dravograd": {
+    "0": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    },
+    "1": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    },
+    "2": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    },
+    "3": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    },
+    "4": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    },
+    "5": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    },
+    "6": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    },
+    "7": {
+      "ProtectionDemand": false,
+      "Values": [],
+      "ModulationFormat": null
+    }
+  }
+}
