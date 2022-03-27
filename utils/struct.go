@@ -2,18 +2,16 @@ package utils
 
 import (
 	"encoding/json"
-	"fmt"
 
 	copier "github.com/jinzhu/copier"
 )
 
-func PrintStruct(s interface{}) {
+func Stringfy(s interface{}) (string, error) {
 	b, err := json.MarshalIndent(s, "", "  ")
 	if err != nil {
-		fmt.Println(err)
-		return
+		return "", err
 	}
-	fmt.Println(string(b))
+	return string(b), nil
 }
 
 func Copy(from interface{}, to interface{}) {

@@ -1,5 +1,7 @@
 package utils
 
+import "strconv"
+
 func Intersection(a, b []int) (c []int) {
 	m := make(map[int]bool)
 
@@ -13,4 +15,12 @@ func Intersection(a, b []int) (c []int) {
 		}
 	}
 	return
+}
+
+func IntSliceToStringSlice(slice []int) []string {
+	var str []string
+	for _, i := range slice {
+		str = append(str, strconv.Itoa(i))
+	}
+	return str
 }
