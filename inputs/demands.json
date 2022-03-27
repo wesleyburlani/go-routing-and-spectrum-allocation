@@ -1,0 +1,100 @@
+[
+  {
+    "id": 6,
+    "from": "Celje",
+    "to": "Ljubljana",
+    "demandInGbps": 40,
+    "slots": 10
+  },
+  {
+    "id": 10,
+    "from": "Ajdovscina",
+    "to": "Celje",
+    "demandInGbps": 40,
+    "slots": 10
+  },
+  {
+    "id": 26,
+    "from": "Dravograd",
+    "to": "Celje",
+    "demandInGbps": 40,
+    "slots": 10
+  },
+  {
+    "id": 35,
+    "from": "Celje",
+    "to": "Kranj",
+    "demandInGbps": 40,
+    "slots": 10
+  },
+  {
+    "id": 45,
+    "from": "Celje",
+    "to": "Dravograd",
+    "demandInGbps": 40,
+    "slots": 2
+  },
+  {
+    "id": 3,
+    "from": "Dravograd",
+    "to": "Celje",
+    "demandInGbps": 40,
+    "slots": 10
+  },
+  {
+    "id": 4,
+    "from": "Dravograd",
+    "to": "Celje",
+    "demandInGbps": 40,
+    "slots": 10
+  },
+  {
+    "id": 7,
+    "from": "Celje",
+    "to": "Dravograd",
+    "demandInGbps": 40,
+    "slots": 10
+  },
+  {
+    "id": 17,
+    "from": "Celje",
+    "to": "Ajdovscina",
+    "demandInGbps": 40,
+    "slots": 10
+  },
+  {
+    "id": 13,
+    "from": "Dravograd",
+    "to": "Celje",
+    "demandInGbps": 40,
+    "slots": 10
+  },
+  {
+    "id": 14,
+    "from": "Celje",
+    "to": "Ajdovscina",
+    "demandInGbps": 40,
+    "slots": 10
+  },
+  {
+    "id": 27,
+    "from": "Dravograd",
+    "to": "Celje",
+    "demandInGbps": 40,
+    "slots": 2
+  },
+  {
+    "id": 11,
+    "from": "NovoMesto",
+    "to": "Celje",
+    "demandInGbps": 40,
+    "slots": 10
+  },
+  {
+    "id": 5,
+    "from": "Celje",
+    "to": "Trbovlje",
+    "demandInGbps": 40,
+    "slots": 2
+  }
+]
