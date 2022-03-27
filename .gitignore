@@ -24,3 +24,5 @@ go.work
 
 build/*
 !build/.gitkeep
+outputs/*
+!outputs/.gitkeep
