@@ -25,7 +25,6 @@ func (s Suurballe) FindDisjointedPaths(
 
 	disjointedPaths := []*PathPair{}
 	mainPaths := (*s.pathSearch).FindPaths(graph, from, to, mainPathsLimit, true)
-
 	for _, mainPath := range mainPaths {
 		digraphCopy := &Graph{}
 		utils.Copy(digraph, digraphCopy)
@@ -39,7 +38,7 @@ func (s Suurballe) FindDisjointedPaths(
 		secondaryPaths := (*s.pathSearch).FindPaths(digraphCopy, from, to, secondayPathsLimit, true)
 
 		if len(secondaryPaths) == 0 {
-			panic("It was not possible to find two disjointed paths between " + from.Id + " and " + to.Id)
+			panic("It was not possible to find two disjointed paths between " + from.String() + " and " + to.String())
 		}
 
 		for _, secondaryPath := range secondaryPaths {

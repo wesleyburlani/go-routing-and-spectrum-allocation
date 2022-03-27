@@ -13,3 +13,7 @@ type Edge struct {
 func (l *Edge) GetId() string {
 	return l.From + " - " + l.To
 }
+
+func (l *Edge) String() string {
+	return l.GetId()
+}

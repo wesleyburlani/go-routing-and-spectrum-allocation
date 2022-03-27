@@ -6,3 +6,7 @@ type Node struct {
 	Longitude string `csv:"Long"`
 	Type      string `csv:"Type"`
 }
+
+func (n *Node) String() string {
+	return n.Id
+}
