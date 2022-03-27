@@ -1,20 +1,24 @@
 package rsa
 
 import (
-	"fmt"
-
 	"github.com/wesleyburlani/go-routing-and-spectrum-allocation/demands"
 	"github.com/wesleyburlani/go-routing-and-spectrum-allocation/graphs"
+	"github.com/wesleyburlani/go-routing-and-spectrum-allocation/logs"
 	"github.com/wesleyburlani/go-routing-and-spectrum-allocation/utils"
 )
 
 type DedicatedProtectionRSA struct {
-	TableFill *TableFill
+	tableFill *TableFill
+	logger    *logs.Logger
 }
 
-func NewDedicatedProtectionRSA(tableFill *TableFill) *DedicatedProtectionRSA {
+func NewDedicatedProtectionRSA(
+	tableFill *TableFill,
+	logger *logs.Logger,
+) *DedicatedProtectionRSA {
 	return &DedicatedProtectionRSA{
-		TableFill: tableFill,
+		tableFill: tableFill,
+		logger:    logger,
 	}
 }
 
@@ -27,7 +31,10 @@ func (s DedicatedProtectionRSA) Start(
 	disjointedPathSearch := graphs.NewSuurballe(&pathSerch)
 	table := NewTable(graph, numberOfChannels, 12.5)
 
+	supplied := 0
 	for _, demand := range demands {
+		(*s.logger).Log("processing demand", demand)
+
 		var from *graphs.Node
 		var to *graphs.Node
 		for _, node := range graph.Nodes {
@@ -41,23 +48,28 @@ func (s DedicatedProtectionRSA) Start(
 
 		paths := disjointedPathSearch.FindDisjointedPaths(graph, from, to, 1, 1)
 		if len(paths) == 0 {
+			(*s.logger).Log(demand.String())
 			continue
 		}
 
 		for _, path := range paths {
 			tableCopy := &Table{}
 			utils.Copy(table, tableCopy)
+			(*s.logger).Log("trying main path: ", path.First)
 			availableSlots := tableCopy.AvailableSlots(graph, path.First)
-			result := (*s.TableFill).FillDemand(table, graph, demand, path.First, availableSlots, false)
+			result := (*s.tableFill).FillDemand(tableCopy, graph, demand, path.First, availableSlots, false)
 			if result {
-				availableSlots = tableCopy.AvailableSlots(graph, path.Second)
-				result = (*s.TableFill).FillDemand(table, graph, demand, path.Second, availableSlots, true)
+				availableSlots2 := tableCopy.AvailableSlots(graph, path.Second)
+				(*s.logger).Log("trying secondary path: ", path.Second)
+				result = (*s.tableFill).FillDemand(tableCopy, graph, demand, path.Second, availableSlots2, true)
 				if result {
 					utils.Copy(tableCopy, table)
-					fmt.Println("supplied: ", demand.Id)
+					(*s.logger).Log(table)
+					supplied++
 				}
 			}
 		}
 	}
+	(*s.logger).Log("total demands: ", len(demands), " supplied: ", supplied, " blocked: ", len(demands)-supplied)
 	return table
 }
