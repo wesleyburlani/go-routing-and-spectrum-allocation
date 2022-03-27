@@ -1,23 +1,36 @@
 package demands
 
 import (
+	"fmt"
+	"log"
+	"os"
 	"sync"
 
 	"github.com/wesleyburlani/go-routing-and-spectrum-allocation/graphs"
+	"github.com/wesleyburlani/go-routing-and-spectrum-allocation/logs"
 	"github.com/wesleyburlani/go-routing-and-spectrum-allocation/utils"
 )
 
 type Generator struct {
-	Graph *graphs.Graph
+	graph        *graphs.Graph
+	saveFilePath string
+	logger       *logs.Logger
 }
 
-func NewGenerator(graph *graphs.Graph) *Generator {
+func NewGenerator(
+	graph *graphs.Graph,
+	saveFilePath string,
+	logger *logs.Logger,
+) *Generator {
 	return &Generator{
-		Graph: graph,
+		graph:        graph,
+		saveFilePath: saveFilePath,
+		logger:       logger,
 	}
 }
 
-func (g *Generator) Generate() []*Demand {
+func (g Generator) GetDemands() []*Demand {
+	(*g.logger).Log("generating demands..")
 	var mutex sync.Mutex
 	var waiter sync.WaitGroup
 
@@ -66,17 +79,41 @@ func (g *Generator) Generate() []*Demand {
 		}(i)
 	}
 	waiter.Wait()
+	if g.saveFilePath != "" {
+		(*g.logger).Log("saving demands on file..")
+		g.saveOnFile(demands)
+	}
+	(*g.logger).Log(fmt.Sprintf("%d demands generated", len(demands)))
 	return demands
 }
 
-func (g *Generator) getNodeIds() []string {
+func (g Generator) getNodeIds() []string {
 	ids := []string{}
-	for _, node := range g.Graph.Nodes {
+	for _, node := range g.graph.Nodes {
 		ids = append(ids, node.Id)
 	}
 	return ids
 }
 
-func (g *Generator) maxNumberOfEdges() int {
-	return len(g.Graph.Nodes) * (len(g.Graph.Nodes) - 1) / 2
+func (g Generator) maxNumberOfEdges() int {
+	return len(g.graph.Nodes) * (len(g.graph.Nodes) - 1) / 2
+}
+
+func (g Generator) saveOnFile(demands []*Demand) {
+	f, err := os.Create(g.saveFilePath)
+
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	defer f.Close()
+
+	stringDemands, _ := utils.Stringfy(demands)
+	data := []byte(stringDemands)
+
+	_, err2 := f.Write(data)
+
+	if err2 != nil {
+		log.Fatal(err2)
+	}
 }
