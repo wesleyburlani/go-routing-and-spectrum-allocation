@@ -1,15 +1,14 @@
 package main
 
 import (
-	"fmt"
-
 	"github.com/jessevdk/go-flags"
 	"github.com/wesleyburlani/go-routing-and-spectrum-allocation/demands"
 	"github.com/wesleyburlani/go-routing-and-spectrum-allocation/graphs"
+	"github.com/wesleyburlani/go-routing-and-spectrum-allocation/injections"
 	"github.com/wesleyburlani/go-routing-and-spectrum-allocation/io"
+	"github.com/wesleyburlani/go-routing-and-spectrum-allocation/logs"
+	"github.com/wesleyburlani/go-routing-and-spectrum-allocation/options"
 	"github.com/wesleyburlani/go-routing-and-spectrum-allocation/rsa"
-	"github.com/wesleyburlani/go-routing-and-spectrum-allocation/utils"
-	"go.uber.org/dig"
 )
 
 func loadGraph(nodesFilePath, edgesFilePath string) *graphs.Graph {
@@ -24,23 +23,18 @@ func loadGraph(nodesFilePath, edgesFilePath string) *graphs.Graph {
 
 func main() {
 
-	_, err := flags.Parse(&options)
+	_, err := flags.Parse(&options.Options)
 	if err != nil {
 		panic(err)
 	}
 
-	container := dig.New()
-	container.Provide(func() graphs.PathSearch { return graphs.NewDjikstra() })
-	container.Provide(func(p graphs.PathSearch) graphs.DisjointedPathPairSearch { return graphs.NewSuurballe(&p) })
-	container.Provide(func() rsa.TableFill { return &rsa.FirstFitRsa{} })
-	container.Provide(func(t rsa.TableFill) rsa.RSA { return rsa.NewDedicatedProtectionRSA(&t) })
+	graph := loadGraph(options.Options.NodesFilePath, options.Options.EdgesFilePath)
 
-	container.Invoke(func(a rsa.RSA) {
-		graph := loadGraph(options.NodesFilePath, options.EdgesFilePath)
-		demand := demands.NewGenerator(graph).Generate()
-		fmt.Println("demands", len(demand))
-		utils.PrintStruct(demand)
+	container := injections.NewContainer(options.Options, graph).BuildContainer()
+
+	container.Invoke(func(a rsa.RSA, l logs.Logger, d demands.Source) {
+		demand := d.GetDemands()
 		table := a.Start(graph, demand, 8)
-		utils.PrintStruct(table.Data)
+		l.Log(table)
 	})
 }
