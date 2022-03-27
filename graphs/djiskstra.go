@@ -1,6 +1,10 @@
 package graphs
 
-import "sort"
+import (
+	"sort"
+
+	"github.com/wesleyburlani/go-routing-and-spectrum-allocation/utils"
+)
 
 type Djikstra struct{}
 
@@ -29,6 +33,7 @@ func (d Djikstra) FindPaths(
 		if len(priorityList) == 0 {
 			break
 		}
+
 		currentNode = priorityList[0]
 		priorityList = priorityList[1:]
 
@@ -57,9 +62,9 @@ func (d Djikstra) FindPaths(
 				continue
 			}
 
-			newPath := NewPath(currentNode.Path.Steps)
+			var newPath = &Path{}
+			utils.Copy(currentNode.Path, newPath)
 			newPath.Steps = append(newPath.Steps, neighboor)
-
 			hasEdge := false
 			var edge *Edge
 			for _, l := range graph.Edges {
@@ -82,6 +87,7 @@ func (d Djikstra) FindPaths(
 			priorityList = append(priorityList, newNode)
 			sortPriorityList(priorityList)
 		}
+		currentNode = nil
 	}
 	return paths
 }
@@ -117,12 +123,10 @@ func (n *djikstraNode) NeighboorsIds(graph *Graph, directional bool) []string {
 	var result []string
 	for _, edge := range graph.Edges {
 		if edge.From == n.Id {
-			if directional {
-				result = append(result, edge.To)
-			} else {
-				result = append(result, edge.To)
-				result = append(result, edge.From)
-			}
+			result = append(result, edge.To)
+		}
+		if !directional && edge.To == n.Id {
+			result = append(result, edge.From)
 		}
 	}
 	return result
